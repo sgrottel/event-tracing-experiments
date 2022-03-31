@@ -5,6 +5,13 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RollingDice", "RollingDice\RollingDice.vcxproj", "{AD463E27-AFCB-49A8-BDF8-9C2F029C7262}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{754D212E-D69F-44C4-97D5-5EE6911AEC3A}"
+	ProjectSection(SolutionItems) = preProject
+		diceprofile.wprp = diceprofile.wprp
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

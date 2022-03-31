@@ -1,0 +1,32 @@
+<WindowsPerformanceRecorder Version="1.0">
+  <Profiles>
+    <SystemCollector Id="WPR_initiated_WprApp_WPR_System_Collector" Name="WPR_initiated_WprApp_WPR System Collector">
+      <BufferSize Value="1024" />
+      <Buffers Value="3266" />
+    </SystemCollector>
+    <EventCollector Id="WPR_initiated_WprApp_WPR_Event_Collector" Name="WPR_initiated_WprApp_WPR Event Collector">
+      <BufferSize Value="1024" />
+      <Buffers Value="653" />
+    </EventCollector>
+    <SystemProvider Id="WPR_initiated_WprApp_WPR_System_Collector_Provider">
+      <Keywords>
+        <Keyword Value="ProcessThread" />
+      </Keywords>
+    </SystemProvider>
+
+    <EventProvider Id="RollingDice" Name="0d6910e0-b0fe-5ee8-00e3-c6bb1c979a53" />
+
+    <Profile Id="RollingDice.Verbose.File" Name="RollingDice" Description="RollingDice" LoggingMode="File" DetailLevel="Verbose">
+      <Collectors>
+        <SystemCollectorId Value="WPR_initiated_WprApp_WPR_System_Collector">
+          <SystemProviderId Value="WPR_initiated_WprApp_WPR_System_Collector_Provider" />
+        </SystemCollectorId>
+        <EventCollectorId Value="WPR_initiated_WprApp_WPR_Event_Collector">
+          <EventProviders>
+            <EventProviderId Value="RollingDice" />
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>
