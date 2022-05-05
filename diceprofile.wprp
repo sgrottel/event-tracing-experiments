@@ -28,5 +28,8 @@
         </EventCollectorId>
       </Collectors>
     </Profile>
+
+    <Profile Id="RollingDice.Verbose.Memory" Name="RollingDice" Description="RollingDice" Base="RollingDice.Verbose.File" LoggingMode="Memory" DetailLevel="Verbose" />
+
   </Profiles>
 </WindowsPerformanceRecorder>
